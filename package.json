@@ -1,0 +1,20 @@
+{
+  "name": "smartcall",
+  "version": "1.0.0",
+  "description": "test for smart call",
+  "main": "count.js",
+  "scripts": {
+    "start": "node count.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gntimba/smartcall.git"
+  },
+  "author": "Godfrey Timba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gntimba/smartcall/issues"
+  },
+  "homepage": "https://github.com/gntimba/smartcall#readme",
+  "devDependencies": {}
+}

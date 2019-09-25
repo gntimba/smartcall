@@ -4,7 +4,6 @@ const fs = require('fs');
 let file = readline.createInterface({
     input: fs.createReadStream('Hello.java')
 });
-
 let lines=0;
 let block=false
 
@@ -21,6 +20,7 @@ file.on('line', function(line) {
             lines++
             block=true
         }else if(line.includes("*/") && block===true){
+            //check if line is a block
             block=false
         }
     }
@@ -28,6 +28,6 @@ file.on('line', function(line) {
 
 
 file.on('close', function(line) {
+    //output total line
     console.log('Total lines : ' + lines);
 });
-module.export={lines}
